@@ -65,7 +65,7 @@ class TinderBot():
 
 		# Temporary action for free passport accept
 		# # Remove once this free feature is disabled
-		self.driver.find_element_by_xpath('//*[@id="modal-manager"]/div/div/div[2]/button').click()
+		# self.driver.find_element_by_xpath('//*[@id="modal-manager"]/div/div/div[2]/button').click()
 
 	def like(self):
 		like_btn = self.driver.find_element_by_xpath('//*[@id="content"]/div/div[1]/div/main/div[1]/div/div/div[1]/div/div[2]/div[4]/button')
