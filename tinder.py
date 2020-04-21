@@ -127,7 +127,7 @@ class TinderBot():
 			sleep(0.2)
 
 			msg_box = self.driver.find_element_by_class_name('sendMessageForm__input')
-			msg_box.send_keys('Hola :)')
+			msg_box.send_keys('Hello there (:')
 
 			send_btn = self.driver.find_element_by_xpath('//*[@id="content"]/div/div[1]/div/main/div[1]/div/div/div/div[1]/div/div/div[3]/form/button')
 			send_btn.click()
