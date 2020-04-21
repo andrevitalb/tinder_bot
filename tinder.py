@@ -116,7 +116,7 @@ class TinderBot():
 	def close_match(self):
 		self.driver.find_element_by_xpath('//*[@id="modal-manager-canvas"]/div/div/div[1]/div/div[3]/a').click()
 
-	def message_all(self):
+	def message_all(self, message = 'Hello there (:'):
 		while True:
 			matches = self.driver.find_elements_by_class_name('matchListItem')[1:]
 			
@@ -127,7 +127,7 @@ class TinderBot():
 			sleep(0.2)
 
 			msg_box = self.driver.find_element_by_class_name('sendMessageForm__input')
-			msg_box.send_keys('Hello there (:')
+			msg_box.send_keys(message)
 
 			send_btn = self.driver.find_element_by_xpath('//*[@id="content"]/div/div[1]/div/main/div[1]/div/div/div/div[1]/div/div/div[3]/form/button')
 			send_btn.click()
